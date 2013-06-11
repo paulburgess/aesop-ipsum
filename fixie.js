@@ -154,6 +154,18 @@ function () {
 
     // Begin generator
     // PB: Going to start with lines, move to verses for paragraphs later
+    
+    // PB: Going to need to bring back word library too for a, td etc.
+    // e.g. sucker, waders, heavens
+    
+
+    var fixie_wordlibrary = [
+    "flavors",
+    "waders",
+    "naysayers",
+    "sucker",
+    "brim"];
+    
     var fixie_linelibrary = [
     "Is a love such as that which I exhibit for my practice",
     "Let a sucker drift, I lift up every stone prone to find",
@@ -176,7 +188,7 @@ function () {
     }
 
     function fixie_fetchWord() {
-        return fixie_linelibrary[constrain(0, fixie_linelibrary.length - 1 )];
+        return fixie_wordlibrary[constrain(0, fixie_wordlibrary.length - 1 )];
     }
     
 
@@ -236,7 +248,7 @@ function () {
     }
 
     function fixie_fetchParagraphs() {
-        return fetch_suroundWithTag(3, 7, fixie_fetchParagraph, 'p');
+        return fetch_suroundWithTag(3, 7, fixie_fetchVerse, 'p');
     }
 
     function fixie_fetchList() {
