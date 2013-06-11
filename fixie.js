@@ -96,9 +96,13 @@ function () {
         case 'aside':
         case 'summary':
         case 'blockquote':
-        case 'p':
             element.innerHTML = fixie_fetchParagraph();
             break;
+
+        case 'p':
+            element.innerHTML = fixie_fetchVerse();
+            break;
+            
 
         case 'article':
         case 'section':
@@ -155,9 +159,16 @@ function () {
     "Let a sucker drift, I lift up every stone prone to find",
     "And a scent, your riddles yield a little plastic blend",
     "Once my breath is dispersed, My God, you think the heavens touched the earth",
-    "Ok, I lay me down to sleep, creepin' a slumber under red skies"]
+    "Ok, I lay me down to sleep, creepin' a slumber under red skies"];
 
 
+
+    var fixie_verselibrary = [
+    "Ok, I lay me down to sleep, creepin' a slumber under red skies, Heads splittin', straight sippin' a drip of dead vibes, It's red tides from here, stop and smell analog hell, Clenchin' a stench of burnin' logics and a child with yearning optics",
+
+    "Billy-goat beard twenty years in the making, Carried lures in his brim, carried beer in his waders, Stinked like alcohol of all prominent flavors, Carried knives in his vest, carried war in his nature, Sat among the forest floor critters and pine cones, Could tie a perfect fly with his eyes closed, Veteran angler with a mission to run, Make all naysayers hold t-t-t-tongues"
+
+];
 
 
     function fixie_capitalize(string) {
@@ -167,6 +178,14 @@ function () {
     function fixie_fetchWord() {
         return fixie_linelibrary[constrain(0, fixie_linelibrary.length - 1 )];
     }
+    
+
+
+  function fixie_fetchVerseWords() {
+        return fixie_verselibrary[constrain(0, fixie_verselibrary.length - 1 )];
+    }
+
+
 
     function constrain(min, max){
          return Math.round(Math.random() * (max - min) + min);
@@ -201,6 +220,12 @@ function () {
         return fixie_fetch(1, 1, fixie_fetchLine);
     }
     
+    function fixie_fetchVerse() {
+        //return fixie_fetch(3, 5, fixie_fetchWord);
+        
+        // short one liners for header / small elemnents
+        return fixie_fetch(1, 1, fixie_fetchVerseWords);
+    }
 
    
     
