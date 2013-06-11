@@ -174,7 +174,11 @@ function () {
     "console",
     "donuts",
     "experiment",
-    "earthly"];
+    "earthly",
+    "thump",
+    "brain",
+    "melody",
+    "outside"];
     
     
     /////////////////////////////////////////////////
@@ -225,17 +229,22 @@ function () {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
 
+    ///// ===================================
+    ///// ++ Load up the words you need here
+    
     function fixie_fetchWord() {
         return fixie_wordlibrary[constrain(0, fixie_wordlibrary.length - 1 )];
     }
     
-
+    function fixie_fetchLineWords() {
+        return fixie_linelibrary[constrain(0, fixie_linelibrary.length - 1 )];
+    }
 
   function fixie_fetchVerseWords() {
         return fixie_verselibrary[constrain(0, fixie_verselibrary.length - 1 )];
     }
 
-
+     ///// ===================================
 
     function constrain(min, max){
          return Math.round(Math.random() * (max - min) + min);
@@ -257,10 +266,13 @@ function () {
         return startTag + fixie_fetch(min, max, func, endTag + startTag) + endTag;
     }
 
-     function fixie_fetchLine() {
-        return fixie_fetch(1, 1, fixie_fetchWord) + '.';
-    }
 
+    ///// ===================================
+    ///// ++ Get what you need here
+
+     function fixie_fetchLine() {
+        return fixie_fetch(1, 1, fixie_fetchLineWords) + '.';
+    }
 
 
     function fixie_fetchPhrase() {
@@ -277,9 +289,7 @@ function () {
         return fixie_fetch(1, 1, fixie_fetchVerseWords);
     }
 
-   
-    
-    
+  
 
     function fixie_fetchParagraph() {
         return fixie_fetch(1, 1, fixie_fetchLine);
@@ -302,6 +312,8 @@ function () {
         return html;
     }
 
+ 
+     ///// ===================================
  
    
     // Handle all elements with class 'fixie'
