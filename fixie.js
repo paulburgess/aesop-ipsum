@@ -35,7 +35,7 @@ function () {
      *
      * fixie_fetchWord();
      * fixie_fetchPhrase();
-     * fixie_fetchSentence();
+     * fixie_fetchLine();
      * fixie_fetchParagraph();
      * fixie_fetchParagraphs();
      *
@@ -136,7 +136,7 @@ function () {
             break;
 
         default:
-            element.innerHTML = fixie_fetchSentence();
+            element.innerHTML = fixie_fetchLine();
         }
     }
 
@@ -149,14 +149,23 @@ function () {
 
 
     // Begin generator
-    var fixie_wordlibrary = ["I", "8-bit", "ethical", "reprehenderit", "delectus", "non", "latte", "fixie", "mollit", "authentic", "1982", "moon", "helvetica", "dreamcatcher", "esse", "vinyl", "nulla", "Carles", "bushwick", "bronson", "clothesline", "fin", "frado", "jug", "kale", "organic", "local", "fresh", "tassel", "liberal", "art", "the", "of", "bennie", "chowder", "daisy", "gluten", "hog", "capitalism", "is", "vegan", "ut", "farm-to-table", "etsy", "incididunt", "sunt", "twee", "yr", "before", "gentrify", "whatever", "wes", "Anderson", "chillwave", "dubstep", "sriracha", "voluptate", "pour-over", "esse", "trust-fund", "Pinterest", "Instagram", "DSLR", "vintage", "dumpster", "totally", "selvage", "gluten-free", "brooklyn", "placeat", "delectus", "sint", "magna", "brony", "pony", "party", "beer", "shot", "narwhal", "salvia", "letterpress", "art", "party", "street-art", "seitan", "anime", "wayfarers", "non-ethical", "viral", "iphone", "anim", "polaroid", "gastropub", "city", 'classy', 'original', 'brew']
+    // PB: Going to start with lines, move to verses for paragraphs later
+    var fixie_linelibrary = [
+    "Is a love such as that which I exhibit for my practice",
+    "Let a sucker drift, I lift up every stone prone to find",
+    "And a scent, your riddles yield a little plastic blend",
+    "Once my breath is dispersed, My God, you think the heavens touched the earth",
+    "Ok, I lay me down to sleep, creepin' a slumber under red skies"]
+
+
+
 
     function fixie_capitalize(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
 
     function fixie_fetchWord() {
-        return fixie_wordlibrary[constrain(0, fixie_wordlibrary.length - 1 )];
+        return fixie_linelibrary[constrain(0, fixie_linelibrary.length - 1 )];
     }
 
     function constrain(min, max){
@@ -179,16 +188,26 @@ function () {
         return startTag + fixie_fetch(min, max, func, endTag + startTag) + endTag;
     }
 
-    function fixie_fetchPhrase() {
-        return fixie_fetch(3, 5, fixie_fetchWord);
+     function fixie_fetchLine() {
+        return fixie_fetch(1, 1, fixie_fetchWord) + '.';
     }
 
-    function fixie_fetchSentence() {
-        return fixie_fetch(4, 9, fixie_fetchWord) + '.';
+
+
+    function fixie_fetchPhrase() {
+        //return fixie_fetch(3, 5, fixie_fetchWord);
+        
+        // short one liners for header / small elemnents
+        return fixie_fetch(1, 1, fixie_fetchLine);
     }
+    
+
+   
+    
+    
 
     function fixie_fetchParagraph() {
-        return fixie_fetch(3, 7, fixie_fetchSentence);
+        return fixie_fetch(1, 1, fixie_fetchLine);
     }
 
     function fixie_fetchParagraphs() {
