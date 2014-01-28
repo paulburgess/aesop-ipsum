@@ -1,5 +1,7 @@
 # Aesop Ipsum
 
+<img src="http://farm3.staticflickr.com/2210/2230759958_c4b930b05b.jpg" />
+
 ### Why use this?
 text here
 
