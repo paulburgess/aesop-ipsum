@@ -1,13 +1,8 @@
-# Fixie.js
+# Aesop Ipsum
 
-Fixie is an open source tool that that automatically adds filler content to HTML documents. It's very simple, and we welcome contributions.
+### Why use this?
+text here
 
-To learn more, check out  [fixiejs.com](http://www.fixiejs.com "fixiejs") 
-
-### Why use Fixie?
-When designing and developing websites, it's often useful to add lorem ipsum text to see what your page will look like without worrying about your final content.
-
-Unfortunately, adding lots of filler content involves lots of copy-pasting and manual editing, and also makes your HTML unwieldy.
 
 [Fixie.js](http://www.fixiejs.com "fixiejs")  makes filler content succinct, making it faster and easier to test out your designs.
 
