@@ -27,6 +27,13 @@
 
 /* --------------------------------------------------- */
 
+html {
+  font-size: 80%;
+  @include breakpoint(em(700)){
+		font-size: 100%;
+	}
+}
+
 body {
   margin: 0;
   display: flex;
@@ -36,8 +43,16 @@ body {
 
 .image-strip {
   background: #333;
+  height: 175px;
+  @include breakpoint(em(700)){
   height: 250px;
+	}
+
+    background-image: url(../img/header--600.jpg?f);
+  @include breakpoint(em(700)){
   background-image: url(../img/header.jpg?8ftf);
+	}
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left center;
@@ -55,7 +70,7 @@ header {
   background-color: #333;
 
   color: #FFF;
-  padding: $space;
+  padding: $space 0;
   width: 100%;
   h1, h2 {
     margin: 0;
@@ -70,7 +85,7 @@ header {
 
 main {
 @extend %holder;
-margin-bottom: 180px;
+
 }
 
 footer {
@@ -79,7 +94,42 @@ footer {
 width: 100%;
 }
 
+.refresh {
+  margin: 80px 0 80px 0;
+  display: flex;
+  justify-content: center;
+
+  button {
+    cursor: pointer;
+    &:hover {
+      background-color: shade(#CCC, 20%);
+    }
+  }
+
+  svg {
+    display: inline-block;
+    margin-right: 5px;
+
+  }
+
+}
+
 .foot-notes {
   margin-top: $space*2;
-  font-size: 70%;
+  font-size: 80%;
+
+  p + p {
+    margin-top: 10px;
+  }
+
+}
+
+button {
+  font-size: 14px;
+  border:0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $space;
+  background-color: #CCC;
 }
