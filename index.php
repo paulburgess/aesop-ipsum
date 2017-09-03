@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lorum ipsum generator using Aesop Rock lyrics</title>
+	<title>Placeholder text using Aesop Rock lyrics</title>
 	<link rel="stylesheet" href="_/css/screen.css">
+
+	<meta name="description" content="Create placeholder and lorem ipsum style text using Aesop Rock lyrics">
+
+	<!-- TODO: Add og and twitter tags -->
 
 </head>
 <body>
 
-<div class="image-strip"></div>
+<div class="image-strip">
+	<div class="image-strip__image">
+		<img src="_/img/header.jpg" alt="Aesop Rock performing live">
+	</div>
+	<!-- image-strip__image -->
+</div>
 
 <header role="banner">
 <!-- <img src="_/img/header.jpg" alt="Aesop Rock"> -->

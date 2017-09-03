@@ -28,6 +28,7 @@
 /* --------------------------------------------------- */
 
 html {
+  background-color: #333;
   font-size: 80%;
   @include breakpoint(em(700)){
 		font-size: 100%;
@@ -42,32 +43,40 @@ body {
 }
 
 .image-strip {
-  background: #333;
-  height: 175px;
-  @include breakpoint(em(700)){
-  height: 250px;
-	}
+  background: #030303;
+  // height: 175px;
+  // @include breakpoint(em(700)){
+  // height: 250px;
+	// }
 
-    background-image: url(../img/header--600.jpg?f);
-  @include breakpoint(em(700)){
-  background-image: url(../img/header.jpg?8ftf);
-	}
+  // background-image: url(../img/header--600.jpg?f);
+  // @include breakpoint(em(700)){
+  // background-image: url(../img/header.jpg?8ftf);
+	// }
+  //
+  // background-size: 850px auto;
+  // background-repeat: no-repeat;
+  // background-position: center center;
 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left center;
-
+  display: flex;
+  justify-content: center;
 
   width: 100%;
   color: #FFF;
 
+  &__image {
+    max-width: 850px;
+  }
 
+  img {
+    display: block;
+  }
 
 
 }
 
 header {
-  background-color: #333;
+  background-color: #030303;
 
   color: #FFF;
   padding: $space 0;
