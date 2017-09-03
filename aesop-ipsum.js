@@ -111,7 +111,7 @@ function () {
 
             /* Special cases */
         case 'a':
-            element.href = "http://ryhan.me/";
+            element.href = "http://delargedesign.com/";
             element.innerHTML = "www." + aesop_fetchWord() + aesop_capitalize(aesop_fetchWord()) + ".com";
             break;
 
