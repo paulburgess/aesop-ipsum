@@ -28,18 +28,53 @@
 /* --------------------------------------------------- */
 
 body {
+  margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
+.image-strip {
+  background: #333;
+  height: 250px;
+  background-image: url(../img/header.jpg?8ftf);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+
+
+  width: 100%;
+  color: #FFF;
+
+
+
+
+}
+
 header {
-  background: $color--dark;
+  background-color: #333;
+
+  color: #FFF;
+  padding: $space;
+  width: 100%;
+  h1, h2 {
+    margin: 0;
+  }
+}
+
+.intro {
+  background-color: #fff;
+  width: 100%;
+  padding: $space 0;
 }
 
 main {
+@extend %holder;
+margin-bottom: 180px;
+}
 
-  width: 60%;
-  max-width: 600px;
+footer {
+  background: #FFF;
+  padding: 40px 0;
+width: 100%;
 }

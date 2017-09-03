@@ -29,7 +29,7 @@ $breakpoint-medium-up: rem(750px);
 /* -- Colours + Variables */
 /* ------------------------------------------- */
 
-$site-width: 1200;
+$site-width: 680;
 $space: 20px;
 
 
@@ -68,6 +68,16 @@ $color--link--hover: #666;
 	margin: 0 auto;
 	position: relative;
 	@extend %clearfix;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include breakpoint(em(700)){
+    padding-left: 50px;
+    padding-right: 50px;
+
+  	}
+
 }
 
 
@@ -220,14 +230,7 @@ li +li {
 /* 	padding-top: $space;
 padding-bottom: $space; */
 
-padding-left: 20px;
-padding-right: 20px;
 
-@include breakpoint(em(700)){
-  padding-left: 50px;
-  padding-right: 50px;
-
-	}
 
 }
 
@@ -237,7 +240,7 @@ padding-right: 20px;
 
 a {
 	color: $color--link;
-  text-decoration: none;
+text-decoration-skip: ink;
   //@include single-transition(all, .15s, ease, 0);
 }
 

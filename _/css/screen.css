@@ -21,17 +21,26 @@ $breakpoint-medium-up: rem(750px);
 /* -- Placeholders */
 /* ------------------------------------------- */
 /* line 47, ../sass/_base.scss */
-.holder:after {
+.holder:after, main:after {
   content: "";
   display: table;
   clear: both;
 }
 
 /* line 66, ../sass/_base.scss */
-.holder {
-  max-width: 1200px;
+.holder, main {
+  max-width: 680px;
   margin: 0 auto;
   position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 43.75em) {
+  /* line 66, ../sass/_base.scss */
+  .holder, main {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 /* ------------------------------------------- */
@@ -45,12 +54,12 @@ div.logo {
  }
  */
 /* Apply a natural box layout model to all elements: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
-/* line 130, ../sass/_base.scss */
+/* line 140, ../sass/_base.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 132, ../sass/_base.scss */
+/* line 142, ../sass/_base.scss */
 .chromeframe {
   position: absolute;
   top: 0;
@@ -75,14 +84,14 @@ div.logo {
   width: device-width;
 }
 /* -------------------------------------------------------------------------------*/
-/* line 143, ../sass/_base.scss */
+/* line 153, ../sass/_base.scss */
 ::-moz-selection {
   background: #333;
   color: #fff;
   text-shadow: none;
 }
 
-/* line 144, ../sass/_base.scss */
+/* line 154, ../sass/_base.scss */
 ::-moz-selection {
   background: #333;
   color: #fff;
@@ -94,12 +103,12 @@ div.logo {
   text-shadow: none;
 }
 
-/* line 146, ../sass/_base.scss */
+/* line 156, ../sass/_base.scss */
 a:link {
   -webkit-tap-highlight-color: #333;
 }
 
-/* line 150, ../sass/_base.scss */
+/* line 160, ../sass/_base.scss */
 .preload * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
@@ -109,86 +118,77 @@ a:link {
 
 /* Basics
 ---------------------------------- */
-/* line 164, ../sass/_base.scss */
+/* line 174, ../sass/_base.scss */
 html {
   background-color: #eee;
 }
 
-/* line 181, ../sass/_base.scss */
+/* line 191, ../sass/_base.scss */
 body {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-/* line 185, ../sass/_base.scss */
+/* line 195, ../sass/_base.scss */
 h1, h2, h3, h4 {
   margin-top: 40px;
 }
 
-/* line 194, ../sass/_base.scss */
+/* line 204, ../sass/_base.scss */
 img {
   max-width: 100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
 
-/* line 199, ../sass/_base.scss */
+/* line 209, ../sass/_base.scss */
 p {
   margin: 0;
   line-height: 150%;
 }
 
-/* line 204, ../sass/_base.scss */
+/* line 214, ../sass/_base.scss */
 p + p {
   margin-top: 20px;
 }
 
-/* line 208, ../sass/_base.scss */
+/* line 218, ../sass/_base.scss */
 li + li {
   margin-top: 10px;
 }
 
-/* line 213, ../sass/_base.scss */
+/* line 223, ../sass/_base.scss */
 .note {
   font-size: 14px;
   font-size: 1.2vw;
 }
 @media (max-width: 1166.66667px) {
-  /* line 213, ../sass/_base.scss */
+  /* line 223, ../sass/_base.scss */
   .note {
     font-size: 14px;
   }
 }
 @media (min-width: 1500px) {
-  /* line 213, ../sass/_base.scss */
+  /* line 223, ../sass/_base.scss */
   .note {
     font-size: 18px;
   }
 }
 
-/* line 217, ../sass/_base.scss */
+/* line 227, ../sass/_base.scss */
 .holder {
   /* 	padding-top: $space;
   padding-bottom: $space; */
-  padding-left: 20px;
-  padding-right: 20px;
-}
-@media (min-width: 43.75em) {
-  /* line 217, ../sass/_base.scss */
-  .holder {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
 }
 
 /* Links
 ================================= */
-/* line 238, ../sass/_base.scss */
+/* line 241, ../sass/_base.scss */
 a {
   color: #333;
-  text-decoration: none;
+  text-decoration-skip: ink;
 }
 
-/* line 244, ../sass/_base.scss */
+/* line 247, ../sass/_base.scss */
 a:hover {
   color: #666;
 }
@@ -197,6 +197,7 @@ a:hover {
 /* --------------------------------------------------- */
 /* line 30, ../sass/screen.scss */
 body {
+  margin: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -206,10 +207,6 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -217,12 +214,44 @@ body {
 }
 
 /* line 37, ../sass/screen.scss */
-header {
-  background: #030303;
+.image-strip {
+  background: #333;
+  height: 250px;
+  background-image: url(../img/header.jpg?8ftf);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  width: 100%;
+  color: #FFF;
 }
 
-/* line 41, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
+header {
+  background-color: #333;
+  color: #FFF;
+  padding: 20px;
+  width: 100%;
+}
+/* line 60, ../sass/screen.scss */
+header h1, header h2 {
+  margin: 0;
+}
+
+/* line 65, ../sass/screen.scss */
+.intro {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* line 71, ../sass/screen.scss */
 main {
-  width: 60%;
-  max-width: 600px;
+  margin-bottom: 180px;
+}
+
+/* line 76, ../sass/screen.scss */
+footer {
+  background: #FFF;
+  padding: 40px 0;
+  width: 100%;
 }

@@ -7,9 +7,22 @@
 </head>
 <body>
 
-<header role="banner">
+<div class="image-strip"></div>
 
+<header role="banner">
+<!-- <img src="_/img/header.jpg" alt="Aesop Rock"> -->
+	<div class="holder">
+		<h1>Aesop Ipsum</h1>
+		<h2>Placeholder text using Aesop Rock lyrics</h2>
+	</div>
 </header>
+
+<div class="intro">
+		<div class="holder">
+			<p>When you can't work with real content, bring some of the illest rap lyrics ever written to your projects.</p>
+		</div>
+</div>
+<!-- intro -->
 
 	<main>
 	<article>
@@ -32,6 +45,16 @@
 
 
 </main>
+
+<footer>
+	<div class="holder">
+
+	<p><a href="https://rhymesayers.com/artists/aesoprock">Offical Aesop Rock web page on rhymesayers.com</a></p>
+
+	</div>
+
+</footer>
+
 
 	<script type="text/javascript" src="aesop-ipsum.js?i987g"></script>
 	<script>
