@@ -255,3 +255,9 @@ footer {
   padding: 40px 0;
   width: 100%;
 }
+
+/* line 82, ../sass/screen.scss */
+.foot-notes {
+  margin-top: 40px;
+  font-size: 70%;
+}

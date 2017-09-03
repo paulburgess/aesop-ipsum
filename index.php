@@ -49,7 +49,12 @@
 <footer>
 	<div class="holder">
 
-	<p><a href="https://rhymesayers.com/artists/aesoprock">Offical Aesop Rock web page on rhymesayers.com</a></p>
+	<p><a href="https://rhymesayers.com/artists/aesoprock">Official Aesop Rock web page on rhymesayers.com</a></p>
+
+	<div class="foot-notes">
+		<p>Based and built on <a href="https://github.com/ryhan/fixie">fixie.js</a></p>
+		<p>A project from the <a href="https://projects.delargedesign.com/">Delarge web studio</a></p>
+	</div>
 
 	</div>
 
