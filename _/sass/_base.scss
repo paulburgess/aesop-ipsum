@@ -32,17 +32,12 @@ $breakpoint-medium-up: rem(750px);
 $site-width: 1200;
 $space: 20px;
 
-$font-size--xlarge: 24px;
-$font-size--large: 18px;
-$font-size--regular: 14px;
-$font-size--small: 10px;
 
 
-$color--yellow: #fffd38;
-$color--pink: #e7037c;
+$color--dark: #030303;
 
-$color--link: $color--yellow;
-$color--link--hover: $color--yellow;
+$color--link: #333;
+$color--link--hover: #666;
 
 /* ------------------------------------------- */
 /* -- Placeholders */
@@ -169,36 +164,11 @@ a:link {-webkit-tap-highlight-color: #333;}
 html {
 
 
-background-color: #333;
+background-color: #eee;
 
 
  //  Backgrounds and positioning stuff
 
-  &.page-home {
-    background-image: url(../img/slap.gif?37g);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  &.page-coachella,
-  &.page-new-york,
-  &.video,
-  &.page-auctions {
-
-  // Gradient
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fd4cfc+26,2cfcfe+74 */
-//  background: rgb(253,76,252); /* Old browsers */
-  background:  -moz-linear-gradient(top, rgba(253,76,252,1) 26%, rgba(44,252,254,1) 74%); /* FF3.6-15 */
-  background:  -webkit-linear-gradient(top, rgba(253,76,252,1) 26%,rgba(44,252,254,1) 74%); /* Chrome10-25,Safari5.1-6 */
-  background:  linear-gradient(to bottom, rgba(253,76,252,1) 26%,rgba(44,252,254,1) 74%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd4cfc', endColorstr='#2cfcfe',GradientType=0 ); /* IE6-9 */
-
-
-
-  display: flex;
-  flex-direction: column;
-
-}
 
 
 
@@ -208,45 +178,18 @@ background-color: #333;
 
 }
 
-
+body {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
 
 h1,h2,h3,h4 {
-  margin-top: 0;
-}
-
-body {
-  color: $color--yellow;
-  font-family: Arial, sans-serif;
-  @include responsive-font(regular);
-  margin: 0;
-
-
-  display: flex;
-  flex-direction: column;
-
-
-
-  width: 100%;
-
-  .mobile & {
-    justify-content: center;
-    align-items: center;
-
-  }
-
+  margin-top: $space*2;
 }
 
 
-main {
-  display: flex;
-  flex-direction: column;
 
-  .mobile & {
-  width: 90%;
-  max-width: 650px;
 
-  }
-}
+
 
 img {
   max-width:100%;
@@ -289,23 +232,6 @@ padding-right: 20px;
 }
 
 
-/* Headers / Titles
-================================= */
-
-/* h1,h2,h3,h4,h5,h6 {
-  font-weight: normal;
-} */
-
-// h1 {
-//   font-size: $font-size--xlarge;
-//   text-align: center;
-//   margin-bottom: $space;
-//   }
-// h2,h3,h4 {font-size: $font-size--large;}
-// h5,h6 {font-size: $font-size--regular;}
-
-/* ---------- */
-
 /* Links
 ================================= */
 
@@ -330,33 +256,3 @@ a:hover {
 // }
 
 /* ---------- */
-
-
-
-
-
-address {
-	font-style: normal;
-}
-
-.fixed {
-	position: fixed;
-}
-
-
-
-.video-background {
-  background: #000;
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -99;
-}
-.video-foreground,
-.video-background iframe {
-  position: absolute;
-  top: -10%;
-  left: -10%;
-  width: 120%;
-  height: 120%;
-  pointer-events: none;
-}

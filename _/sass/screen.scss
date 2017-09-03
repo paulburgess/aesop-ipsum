@@ -18,22 +18,7 @@
 /* Base styles */
 @import "flexible-type";
 @import "base";
-@import "heights";
-@import "forms";
-@import "block-grid";
-@import "slider";
 
-
-/* Overlays */
-@import "magnific";
-
-@import "nav";
-@import "header";
-@import "video-controls";
-@import "gallery";
-
-
-@import "auction";
 
 
 // .preload * {
@@ -41,3 +26,20 @@
 // }
 
 /* --------------------------------------------------- */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background: $color--dark;
+}
+
+main {
+
+  width: 60%;
+  max-width: 600px;
+}
