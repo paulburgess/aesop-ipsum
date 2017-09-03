@@ -1,0 +1,79 @@
+html,
+body {
+
+//  min-height: 100%;
+  min-height: 100vh;
+
+}
+
+
+html.page-auctions,
+html.page-auctions body {
+  min-height: 670px;
+  @include breakpoint(min-height em(670)){
+  min-height: 100vh;
+  }
+
+}
+
+
+
+// body {
+//
+// //  min-height: 100%;
+//   min-height: 100vh;
+//
+// }
+
+// GALLERY
+
+.page-gallery {
+/* --------------------------------------------------- */
+
+  main {
+    min-height: 100vh;
+  }
+
+    .slider {
+
+      min-height: 100vh;
+
+      > div {
+        width: 100%;
+        min-height: 100%;
+        min-height: 100vh;
+      }
+
+    }
+
+/* --------------------------------------------------- */
+}
+
+
+
+// Slider
+
+.about-text {
+font-size: 14px;
+}
+
+
+.slick-track {
+  min-height: 100vh;
+}
+
+.slick-slide {
+//min-height: 100%;
+height: 100vh;
+}
+
+
+
+html[data-slideno="1"]{
+
+  .slick-slide {
+    min-height: 100vh !important; // allows for scrolling
+    height: auto;
+  }
+
+}

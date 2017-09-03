@@ -1,0 +1,330 @@
+/* ------- */
+
+/* Markup */
+/*
+<nav role="navigation" class="holder">
+
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger"></label>
+
+  <?php wp_nav_menu( array('menu' => 'Main menu', 'container' => '') ); ?>
+</nav>
+
+*/
+
+$small-nav--width: 220;
+$menu-icon-size: 24;
+$menu-icon-offset: 30; // distance from edge of browser
+//$menu-icon-right-margin: 100;
+
+/* When small nav kicks in */
+$breakpoint--small-nav: em(700); // always on
+
+
+/* Hide checkbox */
+.nav-trigger {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+
+// active nav
+
+.page-coachella li.coachella span {
+  opacity: 1;
+}
+
+.page-new-york li.new-york span {
+  opacity: 1;
+}
+
+.page-auctions li.auctions span {
+  opacity: 1;
+}
+
+
+.page-gallery li.gallery span {
+  opacity: 1;
+}
+
+
+
+nav {
+
+  text-align: left;
+
+
+  img {
+    display: none;
+  }
+
+
+  @include breakpoint($breakpoint--small-nav){
+
+/* --------------------------------------------------- */
+
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+
+    left: 0;
+    top:0;
+
+
+    li {
+      width: 100px;
+      font-weight: bold;
+        z-index: 10;
+          position: absolute;
+    }
+
+    img {
+      width: 110px;
+      display: block;
+      margin: 0 auto 6px auto;
+    }
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .text {
+      opacity: 0;
+    }
+
+    a:hover .text {
+      opacity: 1;
+    }
+
+
+    // Position menu items
+
+
+
+    .coachella {
+      right: 10px;
+      top: 10px;
+    }
+
+    .gallery {
+      right: 10px;
+      bottom: 10px;
+    }
+
+    .auctions {
+    bottom: 10px;
+    left: 50%;
+    margin-left: -25px;
+    }
+
+    .album {
+    bottom:10px;
+    left:10px;
+
+      img {
+        width: 50px;
+      }
+
+    }
+
+
+    .new-york {
+      left: 10px;
+      top: 10px;
+    }
+
+
+    /* --------------------------------------------------- */
+
+	}
+
+
+
+
+
+ ul {
+
+  	@extend %naked-list;
+  	margin: 0;
+  	padding: 60px 0 0 0 ;
+
+
+  	li {
+
+      font-size: 16px;
+      @include breakpoint($breakpoint--small-nav){
+			  font-size: 20px;
+	     }
+
+      text-align: center;
+
+
+    }
+
+  }
+
+
+
+
+
+
+  /* ****** Small screen nav */
+  /* --------------------------------------------------- */
+  /* --------------------------------------------------- */
+
+
+
+
+  /* base styles for menu icon */
+
+  /* menu icon */
+  label[for="nav-trigger"] {
+
+
+
+    display: none;
+    cursor:pointer;
+    position: fixed;
+
+    z-index: 999;
+    //right: -$menu-icon-right-margin + px;
+    right: 0;
+    width: $menu-icon-size +px;
+    height: $menu-icon-size +px;
+
+    @include breakpoint(max-width $breakpoint--small-nav){
+      display: block;
+    			
+          top: 20px;
+          right: $menu-icon-offset+px;
+    }
+
+
+
+
+
+
+
+  }
+
+
+  /* When checked/open - move menu icon */
+  // .nav-trigger:checked + label {
+  // //    right: $small-nav--width - $menu-icon-right-margin + px;
+  // right: $small-nav--width+$menu-icon-offset+px;
+  // }
+
+
+  /* --------------------------------------------------- */
+
+      /* Styles for the small nav */
+      @include breakpoint(max-width $breakpoint--small-nav){
+
+      ul{
+
+          position:fixed;
+          background: #e7037c;
+
+          top:0;
+          height: 100%;
+          width: $small-nav--width+px;
+          z-index: 3;
+
+      }
+
+        li {
+          float:none;
+        }
+
+        a {
+          display:block;
+          padding: 20px;
+
+        }
+
+        a:hover {
+          @include breakpoint(max-wdith $breakpoint--small-nav){
+			      background: #2cfcfe;
+	        }
+          color: #FFF;
+        }
+
+
+
+
+
+
+        .nav-trigger:checked + label[for="nav-trigger"] {
+          &:before{color: #FFF;opacity: 0.7}
+
+        }
+        /* Position side nav off canvas */
+        ul {
+        right:-$small-nav--width+px; /* match width of nav */
+        }
+
+        /* When trigger is checked, move nav into place */
+        .nav-trigger:checked ~ ul {
+        right: 0;
+        }
+
+        label, ul {
+          @include transition(all .4s);
+        }
+
+
+
+        /* --------------------------------------------------- */
+    }
+
+
+
+
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+
+}
+
+
+
+
+
+  /* --------------------------------------------------- */
+  /* --------------------------------------------------- */
+  /* --------------------------------------------------- */
+  /* --------------------------------------------------- */
+
+
+
+
+/* Moving logo if side nav opens */
+
+/*     header h1 {
+  @include transition-property(all);
+  @include transition-duration(.2s);
+  @include transition-timing-function(ease);
+  @include transition-delay(0);
+}
+
+// set width here to be the point at which nav clashes with logo
+.nav-open header h1 {
+  @include breakpoint(max-width $breakpoint--small-nav){
+  opacity: 0.4;
+  transform: translate(-190px,0);
+    }
+}
+ */
+
+
+// JS for adding class
+
+/* $( '[for="nav-trigger"]' ).click(function() {
+if($('body').hasClass('nav-open')){
+  $('body').removeClass('nav-open');
+} else {
+  $('body').addClass('nav-open');
+}
+
+} ); */

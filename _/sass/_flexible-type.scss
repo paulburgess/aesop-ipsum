@@ -1,0 +1,94 @@
+// https://css-tricks.com/snippets/sass/viewport-sized-typography-minimum-maximum-sizes/
+// http://codepen.io/eduardoboucas/pen/YXxmwv
+
+///
+/// Viewport sized typography with minimum and maximum values
+///
+/// @author Eduardo Boucas (@eduardoboucas)
+///
+/// @param {Number}   $responsive  - Viewport-based size
+/// @param {Number}   $min         - Minimum font size (px)
+/// @param {Number}   $max         - Maximum font size (px)
+///                                  (optional)
+/// @param {Number}   $fallback    - Fallback for viewport-
+///                                  based units (optional)
+///
+/// @example scss - 5vw font size (with 50px fallback),
+///                 minumum of 35px and maximum of 150px
+///  @include responsive-font(5vw, 35px, 150px, 50px);
+///
+
+// manual override: @include responsive-font(false, 10vw, 35px, 50px, 150px);
+
+
+@mixin responsive-font($size: false, $responsive: false, $min: false, $max: false, $fallback: false) {
+
+  // defaults - regular
+  // $responsive: 1.6vw;
+  // $min: 10px;
+  // $max: 16px;
+  // $fallback: 12px;
+
+  @if $size == small {
+
+      $responsive: 1.2vw;
+      $min: 14px;
+      $max: 18px;
+      $fallback: 14px;
+
+    } @else if $size == regular {
+
+      $responsive: 1.4vw;
+      $min: 14px;
+      $max: 16px;
+      $fallback: 16px;
+
+    } @else if $size == large {
+
+      $responsive: 2vw;
+      $min: 22px;
+      $max: 30px;
+      $fallback: 22px;
+
+
+    } @else if $size == xlarge {
+
+      $responsive: 2.4vw;
+      $min: 28px;
+      $max: 40px;
+      $fallback: 30px;
+
+  //  } @else {
+
+      // fallback to regular
+      // $responsive: 1.6vw;
+      // $min: 10px;
+      // $max: 16px;
+      // $fallback: 12px;
+
+
+    }
+
+
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+
+  @if $fallback {
+    font-size: $fallback;
+  }
+
+  font-size: $responsive;
+}

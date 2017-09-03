@@ -1,0 +1,26 @@
+.video-controls {
+
+  position: absolute;
+  left:20px;
+  top: 50%;
+  margin-top: -50px;
+  z-index: 1;
+
+  ul {
+    width: 130px;
+    @extend %naked-list;
+    color: #FFF;
+  }
+
+  li {
+    cursor: pointer;
+    padding: 5px;
+    font-weight: bold;
+//    text-shadow: 1px 1px 6px $color--pink;
+  }
+
+  li:hover {
+    color: $color--yellow;
+  }
+
+}

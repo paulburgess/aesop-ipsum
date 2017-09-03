@@ -1,0 +1,23 @@
+.pagination {
+
+	text-align: center;
+  margin: 20px 0;
+
+	.page-numbers {
+		display: inline-block;
+		color: #333;
+		margin-right: 2px;
+		padding: em(8) em(12);
+	}
+
+	a.page-numbers {
+		color: #FFF;
+		background: #111;
+
+		&:hover {
+			background: #333;
+		}
+
+	}
+
+}

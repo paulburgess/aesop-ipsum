@@ -1,0 +1,15 @@
+{
+  "name": "Mobile-Detect",
+  "homepage": "https://github.com/serbanghita/Mobile-Detect",
+  "version": "2.8.5",
+  "_release": "2.8.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.8.5",
+    "commit": "ae99dce154ecb8dff2e26274a11d62a85a88fbd7"
+  },
+  "_source": "https://github.com/serbanghita/Mobile-Detect.git",
+  "_target": "~2.8.5",
+  "_originalSource": "https://github.com/serbanghita/Mobile-Detect.git",
+  "_direct": true
+}

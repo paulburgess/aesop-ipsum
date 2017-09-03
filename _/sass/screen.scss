@@ -1,15 +1,43 @@
-@import "app";
+@import 'compass/css3';
+
+
+
+/* ==================== */
+/* ==================== */
+@import "../../_/bower/sassy-maps/sass/sassy-maps";
+@import "../../_/bower/breakpoint-sass/stylesheets/breakpoint";
+@import "../../_/bower/singularity/stylesheets/singularitygs";
+@import "../../_/bower/bourbon/dist/bourbon";
+
+
+
+//Global Foundation Settings
+//@import "normalize";
+
+
+/* Base styles */
+@import "flexible-type";
 @import "base";
+@import "heights";
+@import "forms";
+@import "block-grid";
+@import "slider";
+
+
+/* Overlays */
 @import "magnific";
-/* @import "genericons"; */
 
-@media (min-width:1em) {
-    @import "320-up"; }
+@import "nav";
+@import "header";
+@import "video-controls";
+@import "gallery";
 
-@media (min-width:48em) {
-    @import "768-up"; }
 
-@media (min-width:72.5em) {
-    @import "1160-up"; }
-    
-/* @import "responsive-nav";  */
+@import "auction";
+
+
+// .preload * {
+//   transition: none;
+// }
+
+/* --------------------------------------------------- */

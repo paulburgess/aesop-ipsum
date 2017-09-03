@@ -1,165 +1,362 @@
-@import 'compass/css3';
+/* Placeholders + Mixins */
+/* http://www.sitepoint.com/sass-mixin-placeholder/ */
 
-/* $tan: #908365; */
-$tan: #B7A989;
-$dark-tan: #615C52;
+//@import "compass/css3";
 
-$opal: #94B8BE;
-$dark-opal: #6EA0A8;
-$grey: #595D67;
-
-
+/* Breakpoints */
 /*
-@mixin large-text {
+$breakpoint-small-up: rem(100px);
+$breakpoint-medium-up: rem(750px);
+*/
 
-  font: {
-    family: Arial;
-    size: 20px;
-    weight: bold;
+
+/* ------------------------------------------- */
+/* -- Singularity grid */
+/* ------------------------------------------- */
+
+
+@include add-grid(12); /* Mobile first */
+/* @include add-grid(12 at rem(600)); */
+@include add-gutter(50px);
+
+/* $row-width: rem(1400); */
+//$column-gutter: rem(50);
+//$total-columns: 12;
+
+
+
+/* ------------------------------------------- */
+/* -- Colours + Variables */
+/* ------------------------------------------- */
+
+$site-width: 1200;
+$space: 20px;
+
+$font-size--xlarge: 24px;
+$font-size--large: 18px;
+$font-size--regular: 14px;
+$font-size--small: 10px;
+
+
+$color--yellow: #fffd38;
+$color--pink: #e7037c;
+
+$color--link: $color--yellow;
+$color--link--hover: $color--yellow;
+
+/* ------------------------------------------- */
+/* -- Placeholders */
+/* ------------------------------------------- */
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
   }
-  color: #ff0000;
-}
-*/
-
-@mixin button($bg: $tan, $side-padding: 6%) {
-	
-		text-transform: uppercase;
-		padding:16px $side-padding;
-		color:#FFF;
-		@include border-radius(4px);
-		border: 0;
-		font-size: 1.1em;
-		-webkit-appearance: none;
-		background: $bg;
-		/* font-weight: 300; */
-		display: inline-block;
-		line-height: 1;
-		
-		&:hover {
-			background: darken($bg,10%);
-		}
-		
 }
 
 
-@mixin field($bg: #FFF) {
-	
-		padding:5px;
-		color:#666;
-		@include border-radius(4px);
-		border: 1px #CCC solid;
-		font-size: 1em;
-		-webkit-appearance: none;
-		background: $bg;
-		outline: none;
-		/*
-outline-width: thin;
-		outline-color: $tan;
-*/
-		
-		
-		
-		&:focus {
-			background: #F3F3F3;
-		}
-		
+%wrapper {
+	max-width: $site-width;
+	margin: 0 auto;
+	position: relative;
+	padding-left: rem(20);
+	padding-right: rem(20);
+	@extend %clearfix;
 }
 
 
-input[type='text'], input[type='password'], input[type='email'], input[type='number']{
-	@include field;
+
+%holder {
+	max-width: $site-width + px;
+	margin: 0 auto;
+	position: relative;
+	@extend %clearfix;
 }
 
-button, input[type="button"], input[type="reset"], input[type="submit"] {
-	@include button;
+
+%naked-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-/*
-input[type="checkbox"] {
--webkit-appearance: checkbox;
+%visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
 }
-*/
+
+%button {
+  background: #333;
+  color: #FFF;
+
+  &:hover {
+    background: #666;
+  }
+
+}
+
+/* ------------------------------------------- */
+/* -- Mixins */
+/* ------------------------------------------- */
+
+/* https://gist.github.com/taupecat/4090271 */
+@mixin modernizr($test) {
+    html.#{$test} & {
+        @content;
+    }
+}
+
+@mixin image-2x($image, $width, $height) {
+  @media (min--moz-device-pixel-ratio: 1.3),
+         (-o-min-device-pixel-ratio: 2.6/2),
+         (-webkit-min-device-pixel-ratio: 1.3),
+         (min-device-pixel-ratio: 1.3),
+         (min-resolution: 1.3dppx) {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url($image);
+    background-size: $width $height;
+  }
+}
+
+/* Usage:
+div.logo {
+   background: url("logo.png") no-repeat;
+   @include image-2x("logo2x.png", 100px, 25px);
+ }
+ */
 
 
+/* Apply a natural box layout model to all elements: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.chromeframe {position: absolute; top: 0;padding:20px;background: #FFF;color: #666;}
+
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+
+/* -------------------------------------------------------------------------------*/
+
+::-moz-selection{background: #333; color: #fff; text-shadow: none;}
+::selection {background: #333; color: #fff; text-shadow: none;}
+
+a:link {-webkit-tap-highlight-color: #333;}
+
+
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+
+
+
+
+/* Basics
+---------------------------------- */
+
+html {
+
+
+background-color: #333;
+
+
+ //  Backgrounds and positioning stuff
+
+  &.page-home {
+    background-image: url(../img/slap.gif?37g);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &.page-coachella,
+  &.page-new-york,
+  &.video,
+  &.page-auctions {
+
+  // Gradient
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fd4cfc+26,2cfcfe+74 */
+//  background: rgb(253,76,252); /* Old browsers */
+  background:  -moz-linear-gradient(top, rgba(253,76,252,1) 26%, rgba(44,252,254,1) 74%); /* FF3.6-15 */
+  background:  -webkit-linear-gradient(top, rgba(253,76,252,1) 26%,rgba(44,252,254,1) 74%); /* Chrome10-25,Safari5.1-6 */
+  background:  linear-gradient(to bottom, rgba(253,76,252,1) 26%,rgba(44,252,254,1) 74%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd4cfc', endColorstr='#2cfcfe',GradientType=0 ); /* IE6-9 */
+
+
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+
+
+
+//---------------------------------------
+
+}
+
+
+
+h1,h2,h3,h4 {
+  margin-top: 0;
+}
 
 body {
-	font-size: 100%;
-	-webkit-font-smoothing:antialiased;
-	color:#999;
+  color: $color--yellow;
+  font-family: Arial, sans-serif;
+  @include responsive-font(regular);
+  margin: 0;
+
+
+  display: flex;
+  flex-direction: column;
+
+
+
+  width: 100%;
+
+  .mobile & {
+    justify-content: center;
+    align-items: center;
+
+  }
+
 }
 
-.row {
-	position: relative;
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  .mobile & {
+  width: 90%;
+  max-width: 650px;
+
+  }
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
+img {
+  max-width:100%;
+  backface-visibility: hidden;
 }
+
+p {
+  margin: 0;
+  line-height: 150%;
+}
+
+p + p {
+  margin-top: $space;
+}
+
+li +li {
+  margin-top: $space/2;
+}
+
+
+.note {
+@include responsive-font(small);
+}
+
+.holder {
+	@extend %holder;
+
+/* 	padding-top: $space;
+padding-bottom: $space; */
+
+padding-left: 20px;
+padding-right: 20px;
+
+@include breakpoint(em(700)){
+  padding-left: 50px;
+  padding-right: 50px;
+
+	}
+
+}
+
+
+/* Headers / Titles
+================================= */
+
+/* h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+} */
+
+// h1 {
+//   font-size: $font-size--xlarge;
+//   text-align: center;
+//   margin-bottom: $space;
+//   }
+// h2,h3,h4 {font-size: $font-size--large;}
+// h5,h6 {font-size: $font-size--regular;}
+
+/* ---------- */
+
+/* Links
+================================= */
 
 a {
-	text-decoration: none;
-	color: $tan;
-	
-	&:hover {
-		color: darken($tan,15%);
-	}
-	
+	color: $color--link;
+  text-decoration: none;
+  //@include single-transition(all, .15s, ease, 0);
 }
 
-nav a {
--webkit-transition: all 0.15s ease;
--moz-transition: all 0.15s ease;
--o-transition: all 0.15s ease;
-transition: all 0.15s ease;
+a:hover {
+	color: $color--link--hover;
 }
+
+// a:hover {
+// img {
+//   @include transition-property(all);
+//   @include transition-duration(.15s);
+//   @include transition-timing-function(ease);
+//   @include transition-delay(0);
+//   opacity:0.85;
+// }
+// }
+
+/* ---------- */
+
+
+
+
 
 address {
 	font-style: normal;
 }
 
-
-
-.cf { *zoom: 1; }
-.cf:before
-.cf:after,{ content: " "; display: table; }
-.cf:after { clear: both; }
-
-
-.hidden {
-	display: none !important;
+.fixed {
+	position: fixed;
 }
 
 
-/* Loading */
 
-/*
-.pace .pace-progress {
-  background: #a4c4c9;
+.video-background {
+  background: #000;
   position: fixed;
-  z-index: 2000;
-  top: 0;
-  left: 0;
-  height: 2px;
-
-  -webkit-transition: width 1s;
-  -moz-transition: width 1s;
-  -o-transition: width 1s;
-  transition: width 1s;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
 }
-
-.pace-inactive {
-  display: none;
-}
-*/
-
-
-
-
-@media only screen and (min--moz-device-pixel-ratio: 2),
-only screen and (-o-min-device-pixel-ratio: 2/1),
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-device-pixel-ratio: 2) {
-
- /* RETINA BITS */
-
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  pointer-events: none;
 }
