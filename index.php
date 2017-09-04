@@ -1,3 +1,8 @@
+<?php
+
+include('words.php');
+
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,17 +43,95 @@
 		<h1 class="aesop"></h1>
 
 		<section class="aesop">
-			<p></p>
-			<!-- <img/> -->
-			<ul></ul>
-			<p></p>
-			<ol></ol>
-		</section>
-		<h2 class="aesop"></h2>
-		<section class="aesop"></section>
+			<?php
+			// =================
+			// Loop them
 
-		<h3 class="aesop"></h3>
-		<section class="aesop"></section>
+			$lines = isset($_GET['lines']) ? $_GET['lines'] : 2;
+
+			echo "<p>";
+			for ( $i = 0; $i < 3; $i++ )
+			{
+				echo getLine();
+				echo " ";
+			}
+			echo "</p>";
+
+
+			// =================
+			// Titles, we don't need to loop - just pluck
+			// echo "<p>Titles:</p>";
+			// echo "<h1>" .getTitle(). "</h1>";
+			// echo "<h2>" .getTitle(). "</h2>";
+
+			?>
+
+			<!-- <img/> -->
+
+			<ul>
+
+				<?php
+
+				for ( $i = 0; $i < 2; $i++ )
+				{
+					echo"<li>";
+					echo getTitle();
+					echo "</li>";
+				}
+
+				?>
+			</ul>
+
+			<?php
+			echo "<p>";
+			for ( $i = 0; $i < 2; $i++ )
+			{
+				echo getLine();
+				echo " ";
+			}
+			echo "</p>";
+			?>
+
+		</section>
+		<h2><?php echo getTitle(); ?></h2>
+		<section>
+			<?php
+			echo "<p>";
+			for ( $i = 0; $i < 2; $i++ )
+			{
+				echo getLine();
+				echo " ";
+			}
+			echo "</p>";
+			?>
+
+			<?php
+			echo "<p>";
+			for ( $i = 0; $i < 3; $i++ )
+			{
+				echo getLine();
+				echo " ";
+			}
+			echo "</p>";
+			?>
+
+
+		</section>
+
+		<h3><?php echo getTitle(); ?></h3>
+		<section>
+
+			<?php
+			echo "<p>";
+			for ( $i = 0; $i < 4; $i++ )
+			{
+				echo getLine();
+				echo " ";
+			}
+			echo "</p>";
+			?>
+
+		</section>
 
 	</article>
 
@@ -73,7 +156,6 @@
 	<p><a href="https://rhymesayers.com/artists/aesoprock">Official Aesop Rock web page on rhymesayers.com</a></p>
 
 	<div class="foot-notes">
-		<p>Based and built on <a href="https://github.com/ryhan/fixie">fixie.js</a></p>
 		<p>Header photo <a href="https://www.flickr.com/photos/delarge/2230759958/in/album-72157603822916205/">by us</a></p>
 		<p>A project from the <a href="https://projects.delargedesign.com/">Delarge web studio</a></p>
 	</div>
@@ -82,11 +164,5 @@
 
 </footer>
 
-	<!-- https://cdn.rawgit.com/paulburgess/aesop-ipsum/5d607e7d/aesop-ipsum.js -->
-	<script type="text/javascript" src="aesop-ipsum.js?i987g"></script>
-	<script>
-		// Changes default image source to Flickr
-		//aesop.setImagePlaceholder('http://farm3.staticflickr.com/2210/2230759958_c4b930b05b.jpg').init();
-	</script>
 </body>
 </html>
