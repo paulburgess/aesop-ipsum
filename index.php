@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="_/css/screen.css">
 
 	<meta name="description" content="Create placeholder and lorem ipsum style text using Aesop Rock lyrics">
-
+<link rel="icon" type="image/png" href="https://projects.delargedesign.com/assets/images/favicon.png?v16021093844051"/>
 	<!-- TODO: Add og and twitter tags -->
 
 </head>
@@ -82,11 +82,11 @@
 
 </footer>
 
-
+	<!-- https://cdn.rawgit.com/paulburgess/aesop-ipsum/5d607e7d/aesop-ipsum.js -->
 	<script type="text/javascript" src="aesop-ipsum.js?i987g"></script>
 	<script>
 		// Changes default image source to Flickr
-		aesop.setImagePlaceholder('http://farm3.staticflickr.com/2210/2230759958_c4b930b05b.jpg').init();
+		//aesop.setImagePlaceholder('http://farm3.staticflickr.com/2210/2230759958_c4b930b05b.jpg').init();
 	</script>
 </body>
 </html>

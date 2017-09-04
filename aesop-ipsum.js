@@ -210,15 +210,15 @@ function () {
 
 
     var aesop_verselibrary = [
-    "Ok, I lay me down to sleep, creepin' a slumber under red skies, heads splittin', straight sippin' a drip of dead vibes, It's red tides from here, stop and smell analog hell, Clenchin' a stench of burnin' logics and a child with yearning optics",
+    "Ok, I lay me down to sleep, creepin' a slumber under red skies, heads splittin', straight sippin' a drip of dead vibes, It's red tides from here, stop and smell analog hell, Clenchin' a stench of burnin' logics and a child with yearning optics.",
 
-    "Billy-goat beard twenty years in the making, Carried lures in his brim, carried beer in his waders, stinked like alcohol of all prominent flavors, carried knives in his vest, carried war in his nature, sat among the forest floor critters and pine cones, could tie a perfect fly with his eyes closed, Veteran angler with a mission to run, Make all naysayers hold t-t-t-tongues",
+    "Billy-goat beard twenty years in the making, Carried lures in his brim, carried beer in his waders, stinked like alcohol of all prominent flavors, carried knives in his vest, carried war in his nature, sat among the forest floor critters and pine cones, could tie a perfect fly with his eyes closed, Veteran angler with a mission to run, Make all naysayers hold t-t-t-tongues.",
 
-    "Ease back; let a heart thump echo normalcy for 10, let the back burner boiling point descend, I race the derby in the first heat (strike personal) Strike personal space with the most utterly putrid version of grace",
+    "Ease back; let a heart thump echo normalcy for 10, let the back burner boiling point descend, I race the derby in the first heat (strike personal) Strike personal space with the most utterly putrid version of grace.",
 
-    "Busting accidental dirt bike donuts, outside the most ridiculous poison tongue brain silo, dead before the chubby debutante conquered the high note, schooled by the cruel intention inventions pensive sideshow",
+    "Busting accidental dirt bike donuts, outside the most ridiculous poison tongue brain silo, dead before the chubby debutante conquered the high note, schooled by the cruel intention inventions pensive sideshow.",
 
-    "Earth to AR vertical burden has increased at an alarming rate, bliss is down a point, murder up, glee down and still falling, still crawling out of bed at 2 on Saturdays, came this blind soldier-burning confessional"
+    "Earth to AR vertical burden has increased at an alarming rate, bliss is down a point, murder up, glee down and still falling, still crawling out of bed at 2 on Saturdays, came this blind soldier-burning confessional."
 
 
 
@@ -271,7 +271,7 @@ function () {
     ///// ++ Get what you need here
 
      function aesop_fetchLine() {
-        return aesop_fetch(1, 1, aesop_fetchLineWords) + '.';
+        return aesop_fetch(1, 1, aesop_fetchLineWords) + '';
     }
 
 
