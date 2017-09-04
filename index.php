@@ -72,7 +72,7 @@ include('words.php');
 
 				<?php
 
-				for ( $i = 0; $i < 2; $i++ )
+				for ( $i = 0; $i < 4; $i++ )
 				{
 					echo"<li>";
 					echo getTitle();
