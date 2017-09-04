@@ -165,10 +165,10 @@ include('words.php');
 	<div class="holder">
 
 
-	<p><a href="https://rhymesayers.com/artists/aesoprock">Official Aesop Rock web page on rhymesayers.com</a></p>
+	<p><a href="https://rhymesayers.com/artists/aesoprock">Aesop Rock on rhymesayers.com</a></p>
 
 	<div class="foot-notes">
-		<p>Header photo <a href="https://www.flickr.com/photos/delarge/2230759958/in/album-72157603822916205/">by us</a></p>
+		<p><a href="https://www.flickr.com/photos/delarge/2230759958/in/album-72157603822916205/">Header photo</a></p>
 		<p>A project from the <a href="https://projects.delargedesign.com/">Delarge web studio</a></p>
 	</div>
 
