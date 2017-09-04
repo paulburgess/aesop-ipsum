@@ -9,9 +9,21 @@ include('words.php');
 	<title>Placeholder text using Aesop Rock lyrics</title>
 	<link rel="stylesheet" href="_/css/screen.css">
 
-	<meta name="description" content="Create placeholder and lorem ipsum style text using Aesop Rock lyrics">
+	<meta name="description" content="Create placeholder text using Aesop Rock lyrics">
 <link rel="icon" type="image/png" href="https://projects.delargedesign.com/assets/images/favicon.png?v16021093844051"/>
-	<!-- TODO: Add og and twitter tags -->
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aesop ipsum">
+<meta property="og:site_name" content="Aesop ipsum">
+<meta property="og:url" content="https://aesop.rocks/">
+<meta property="og:image" content="https://aesop.rocks/_/img/share.jpg">
+<meta property="og:description" content="Create placeholder text using Aesop Rock lyrics">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@delarge">
+	<meta name="twitter:title" content="Aesop ipsum">
+	<meta name="twitter:description" content="Create placeholder text using Aesop Rock lyrics">
+	<meta name="twitter:image" content="https://aesop.rocks/_/img/share.jpg">
 
 </head>
 <body>
