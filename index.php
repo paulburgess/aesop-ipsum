@@ -7,7 +7,7 @@ include('words.php');
 <html>
 <head>
 	<title>Placeholder text using Aesop Rock lyrics</title>
-	<link rel="stylesheet" href="_/css/screen.css">
+	<link rel="stylesheet" href="_/css/screen.css?bazooka">
 
 	<meta name="description" content="Create placeholder text using Aesop Rock lyrics">
 <link rel="icon" type="image/png" href="https://projects.delargedesign.com/assets/images/favicon.png?v16021093844051"/>
@@ -45,14 +45,14 @@ include('words.php');
 
 <div class="intro">
 		<div class="holder">
-			<p>When you can't work with real content, bring some of the illest rap lyrics ever written to your projects.</p>
+			<p>When you can't work with real content, bring some of the illest rap lyrics ever written to your projects:</p>
 		</div>
 </div>
 <!-- intro -->
 
 	<main>
 	<article>
-		<h1 class="aesop"></h1>
+		<h1><?php echo getTitle(); ?></h1>
 
 		<section class="aesop">
 			<?php

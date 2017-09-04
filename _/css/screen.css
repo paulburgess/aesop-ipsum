@@ -265,22 +265,23 @@ header h1, header h2 {
   background-color: #fff;
   width: 100%;
   padding: 20px 0;
+  font-weight: 700;
 }
 
-/* line 95, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 main {
   background-color: #eee;
   width: 100%;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 footer {
   background: #FFF;
   padding: 40px 0;
   width: 100%;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .refresh {
   margin: 80px 0 80px 0;
   display: -webkit-box;
@@ -292,31 +293,31 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/* line 117, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 .refresh button {
   cursor: pointer;
 }
-/* line 119, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .refresh button:hover {
   background-color: #a3a3a3;
 }
-/* line 124, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .refresh svg {
   display: inline-block;
   margin-right: 5px;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .foot-notes {
   margin-top: 40px;
   font-size: 80%;
 }
-/* line 136, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .foot-notes p + p {
   margin-top: 10px;
 }
 
-/* line 142, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 button {
   font-size: 14px;
   border: 0;
