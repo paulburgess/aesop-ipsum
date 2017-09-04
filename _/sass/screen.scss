@@ -77,20 +77,36 @@ body {
 
 header {
   background-color: #030303;
+  // background-image: url(../img/bg_graf--dark.jpg?7);
+  // background-size: cover;
+  // background-position: center center;
 
   color: #FFF;
   padding: $space 0;
   width: 100%;
   h1, h2 {
-    margin: 0;
+    margin-bottom: 0;
+    margin-top: 0;
   }
+
+  h1 {
+    margin-bottom: 8px;
+  }
+
 }
 
 .intro {
   background-color: #fff;
+  background-image: url(../img/bg_graf.jpg);
+  background-size: cover;
+  background-position: center center;
   width: 100%;
   padding: $space 0;
   font-weight: 700;
+  text-shadow: 1px 1px 1px #FFF;
+
+
+
 }
 
 main {

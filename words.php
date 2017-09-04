@@ -90,11 +90,11 @@ rapidly dissolved my involvement in a solvent of soul and roll back",
 
 "This is a never dug disco, Zoo York tycoon, memorandum bonanza banter clamp crunk out the fish bowl.",
 
-"I used to have a rope ladder but tattered were the rungs, I strung it from the highest willow, trying to hug the sun."
+"I used to have a rope ladder but tattered were the rungs, I strung it from the highest willow, trying to hug the sun.",
 
+"Grief leaf thief briefly turned chieftan, the tapwater's on, the water's off, the water's leaking.",
 
-
-
+"What a long capitol crust, gallop my charriot burning and awful enigma, sprung by the sling of David appears gutterbug batch, prior to hatch, dismiss it as a soul condensing, excuse to decorate maps with thumb tacks this gold star product, pushing hate boogie themes enter the smoke screen blazing saddle remnants."
 
 
 );
@@ -130,12 +130,14 @@ $titles_array = array(
   "When linked we let our eyelids fall and pilots stall",
   "Now taciturn facets burn open to yield malarkey navigator",
   "Pilot burner riddle of trades, divinity, composers",
-  "Ebonics lurking where the crop circles got stamped out from the rain dance.",
+  "Ebonics lurking where the crop circles got stamped out from the rain dance",
   "Axis pivotal point spun all to often",
   "Collapsing scaffold mad pole crusher russian robot recruits",
   "Iron clad oracle test three COM unit disperse silently",
-  "Now what of the madness fragments? Stagnant.",
+  "Now what of the madness fragments? Stagnant",
   "Sling blanks sprayed it with apathy magic balance",
+  "Edgy from elevensies to megabucks",
+  "Cherry pick blue in the pale",
 
 
 
@@ -193,6 +195,18 @@ function getTitle()
     $val = getLine();
   }
   return $val;
+}
+
+
+
+function loopLines($from, $to) {
+
+  for ( $i = 0; $i < rand($from, $to); $i++ )
+  {
+    echo getLine();
+    echo " ";
+  }
+
 }
 
 

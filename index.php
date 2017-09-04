@@ -7,7 +7,7 @@ include('words.php');
 <html>
 <head>
 	<title>Placeholder text using Aesop Rock lyrics</title>
-	<link rel="stylesheet" href="_/css/screen.css?bazooka">
+	<link rel="stylesheet" href="_/css/screen.css?carpenter">
 
 	<meta name="description" content="Create placeholder text using Aesop Rock lyrics">
 <link rel="icon" type="image/png" href="https://projects.delargedesign.com/assets/images/favicon.png?v16021093844051"/>
@@ -54,19 +54,15 @@ include('words.php');
 	<article>
 		<h1><?php echo getTitle(); ?></h1>
 
-		<section class="aesop">
+		<section>
 			<?php
 			// =================
 			// Loop them
 
-			$lines = isset($_GET['lines']) ? $_GET['lines'] : 2;
+			//$lines = isset($_GET['lines']) ? $_GET['lines'] : 2;
 
 			echo "<p>";
-			for ( $i = 0; $i < 3; $i++ )
-			{
-				echo getLine();
-				echo " ";
-			}
+			loopLines(2,3);
 			echo "</p>";
 
 
@@ -96,11 +92,7 @@ include('words.php');
 
 			<?php
 			echo "<p>";
-			for ( $i = 0; $i < 2; $i++ )
-			{
-				echo getLine();
-				echo " ";
-			}
+			loopLines(1,4);
 			echo "</p>";
 			?>
 
@@ -119,11 +111,7 @@ include('words.php');
 
 			<?php
 			echo "<p>";
-			for ( $i = 0; $i < 3; $i++ )
-			{
-				echo getLine();
-				echo " ";
-			}
+			loopLines(2,4);
 			echo "</p>";
 			?>
 
@@ -135,12 +123,7 @@ include('words.php');
 
 			<?php
 			echo "<p>";
-			for ( $i = 0; $i < 4; $i++ )
-			{
-				echo getLine();
-				echo " ";
-			}
-			echo "</p>";
+			loopLines(2,5);
 			?>
 
 		</section>
@@ -168,7 +151,7 @@ include('words.php');
 	<p><a href="https://rhymesayers.com/artists/aesoprock">Aesop Rock on rhymesayers.com</a></p>
 
 	<div class="foot-notes">
-		<p><a href="https://www.flickr.com/photos/delarge/2230759958/in/album-72157603822916205/">Header photo</a></p>
+		<p><a href="https://www.flickr.com/photos/delarge/2230759958/in/album-72157603822916205/">Header photo</a> by <a href="http://www.simonwaller.co.uk/">Simon Waller</a></p>
 		<p>A project from the <a href="https://projects.delargedesign.com/">Delarge web studio</a></p>
 	</div>
 
