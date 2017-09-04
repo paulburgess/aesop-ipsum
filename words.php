@@ -55,7 +55,7 @@ $lines_array = array(
 
   "Please hold for the don't-play dull boy, click: I am not a page or a pull toy. Came in the door and the floor is lava, killjoy if your core more Norman Rockwell.",
 
-  "That engine sputters while the hound dogs wire cutter mechnical rabbit. Bantam weight puppies ain't rabid enough to snatch him."
+  "That engine sputters while the hound dogs wire cutter mechnical rabbit. Bantam weight puppies ain't rabid enough to snatch him.",
 
   "Bantamweight temper tantrum, decrepit anthem, set a low goal, I arrive late."
 
