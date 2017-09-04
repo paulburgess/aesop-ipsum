@@ -45,7 +45,13 @@ $lines_array = array(
 
   "Busting accidental dirt bike donuts, outside the most ridiculous poison tongue brain silo, dead before the chubby debutante conquered the high note, schooled by the cruel intention inventions pensive sideshow.",
 
-  "Earth to AR vertical burden has increased at an alarming rate, bliss is down a point, murder up, glee down and still falling, still crawling out of bed at 2 on Saturdays, came this blind soldier-burning confessional."
+  "Earth to AR vertical burden has increased at an alarming rate, bliss is down a point, murder up, glee down and still falling, still crawling out of bed at 2 on Saturdays, came this blind soldier-burning confessional.",
+
+  "My first name is a random set of numbers and letters, and other alphanumerics that changes hourly forever, my last name, a thousand vowels fading down a sinkhole to a susurrus, couldn't just be John Doe or Bingo.",
+
+  "Let me put you up on Bob's donuts, controller of the warm deep fryer that charms cobras. Picture if you will a witching hour on a weak night in the trenches, where paranoia dead-ends in a bright florescent heaven with sprinkles, I know right, yum!",
+
+  "Today I pulled three ghost crabs out of rock and sand, where the low tide showcased a promised land."
 
 );
 $linesTemp = $lines_array;
@@ -65,9 +71,10 @@ $titles_array = array(
   "Let the back burner boiling point descend",
   "Sit and sweat bullets on a console",
   "Outside the most ridiculous poison tongue brain silo",
-  "Dead before the chubby debutante conquered the high note",
   "Ok, I lay me down to sleep, creepin' a slumber under red skies",
-  "Therefore it is and the melody settles"
+  "Therefore it is and the melody settles",
+  "I get more guidance from my barber",
+
 
 );
 $titlesTemp = $titles_array;
