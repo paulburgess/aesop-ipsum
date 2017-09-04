@@ -51,7 +51,16 @@ $lines_array = array(
 
   "Let me put you up on Bob's donuts, controller of the warm deep fryer that charms cobras. Picture if you will a witching hour on a weak night in the trenches, where paranoia dead-ends in a bright florescent heaven with sprinkles, I know right, yum!",
 
-  "Today I pulled three ghost crabs out of rock and sand, where the low tide showcased a promised land."
+  "Today I pulled three ghost crabs out of rock and sand, where the low tide showcased a promised land.",
+
+  "Please hold for the don't-play dull boy, click: I am not a page or a pull toy. Came in the door and the floor is lava, killjoy if your core more Norman Rockwell.",
+
+  "That engine sputters while the hound dogs wire cutter mechnical rabbit. Bantam weight puppies ain't rabid enough to snatch him."
+
+  "Bantamweight temper tantrum, decrepit anthem, set a low goal, I arrive late."
+
+
+
 
 );
 $linesTemp = $lines_array;
@@ -74,6 +83,10 @@ $titles_array = array(
   "Ok, I lay me down to sleep, creepin' a slumber under red skies",
   "Therefore it is and the melody settles",
   "I get more guidance from my barber",
+  "Where the wild strawberry vines toss and turn",
+  "Pinball whiz in a thimble of Sims",
+  "Fraggle rock your four figure watch"
+
 
 
 );
