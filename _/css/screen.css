@@ -21,14 +21,14 @@ $breakpoint-medium-up: rem(750px);
 /* -- Placeholders */
 /* ------------------------------------------- */
 /* line 47, ../sass/_base.scss */
-.holder:after, main:after {
+.holder:after, main article:after {
   content: "";
   display: table;
   clear: both;
 }
 
 /* line 66, ../sass/_base.scss */
-.holder, main {
+.holder, main article {
   max-width: 680px;
   margin: 0 auto;
   position: relative;
@@ -37,7 +37,7 @@ $breakpoint-medium-up: rem(750px);
 }
 @media (min-width: 43.75em) {
   /* line 66, ../sass/_base.scss */
-  .holder, main {
+  .holder, main article {
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -267,14 +267,20 @@ header h1, header h2 {
   padding: 20px 0;
 }
 
-/* line 100, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
+main {
+  background-color: #eee;
+  width: 100%;
+}
+
+/* line 106, ../sass/screen.scss */
 footer {
   background: #FFF;
   padding: 40px 0;
   width: 100%;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 .refresh {
   margin: 80px 0 80px 0;
   display: -webkit-box;
@@ -286,31 +292,31 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/* line 111, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .refresh button {
   cursor: pointer;
 }
-/* line 113, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .refresh button:hover {
   background-color: #a3a3a3;
 }
-/* line 118, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .refresh svg {
   display: inline-block;
   margin-right: 5px;
 }
 
-/* line 126, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .foot-notes {
   margin-top: 40px;
   font-size: 80%;
 }
-/* line 130, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .foot-notes p + p {
   margin-top: 10px;
 }
 
-/* line 136, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 button {
   font-size: 14px;
   border: 0;

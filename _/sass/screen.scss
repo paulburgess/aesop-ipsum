@@ -93,9 +93,15 @@ header {
 }
 
 main {
-@extend %holder;
+background-color: #eee;
+width: 100%;
+
+  article {
+    @extend %holder;
+  }
 
 }
+
 
 footer {
   background: #FFF;
