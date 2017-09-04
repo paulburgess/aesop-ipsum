@@ -37,9 +37,9 @@
 
 $lines_array = array(
 
-  "Ok, I lay me down to sleep, creepin' a slumber under red skies, heads splittin', straight sippin' a drip of dead vibes, It's red tides from here, stop and smell analog hell, Clenchin' a stench of burnin' logics and a child with yearning optics.",
+  "Ok, I lay me down to sleep, creepin' a slumber under red skies, heads splittin', straight sippin' a drip of dead vibes. It's red tides from here, stop and smell analog hell, clenchin' a stench of burnin' logics and a child with yearning optics.",
 
-  "Billy-goat beard twenty years in the making, Carried lures in his brim, carried beer in his waders, stinked like alcohol of all prominent flavors, carried knives in his vest, carried war in his nature, sat among the forest floor critters and pine cones, could tie a perfect fly with his eyes closed, Veteran angler with a mission to run, Make all naysayers hold t-t-t-tongues.",
+  "Billy-goat beard twenty years in the making, carried lures in his brim, carried beer in his waders, stinked like alcohol of all prominent flavors, carried knives in his vest, carried war in his nature. Sat among the forest floor critters and pine cones, could tie a perfect fly with his eyes closed, veteran angler with a mission to run, make all naysayers hold t-t-t-tongues.",
 
   "Ease back; let a heart thump echo normalcy for 10, let the back burner boiling point descend, I race the derby in the first heat (strike personal) Strike personal space with the most utterly putrid version of grace.",
 
@@ -63,7 +63,34 @@ $lines_array = array(
 
   "I make music and connect color to canvas, swoop down from the trees with potpourris and other bandits. Landed randomly upon the valleys of the grimace, saw my planted leaf start burnin from the oustide in.",
 
-  "Soul crafted fat cats, burrowin', left perennial tenants discouraged in. Discussing my four-season flourishing."
+  "Soul crafted fat cats, burrowin', left perennial tenants discouraged in. Discussing my four-season flourishing.",
+
+  "I got a mantle, and the mantle is a candle, and my candle is a flame that burns to symbolize the day Gretel met Hansel. Then I settle at a stand still.",
+
+  "Oh it'll be soon, balloon immune to doom blend, I ain't ditchin' the kitchen til every spoon bends.",
+
+  "I'm quadruple six plus scruples category mayhem stems, so one overlooked the scene including loopholes.",
+
+  "You're cordially invited to accompany me, in rotations of the tables to label the opposition. As I choose, refusing to evolve with the cold,
+rapidly dissolved my involvement in a solvent of soul and roll back",
+
+"Let 'em shake a little, then release 'em, Like, as if ghostly hysterics would leech on band aid completion.",
+
+"We cadets hold determination as property undeniably divine; we leak passion for the noise. There is not a track to cherish from he who lacks merit.",
+
+"In a cradle I label the dreaded simulation we compile, tenents embeded within synthetic inclination. We have never dined on bait so when corrupt crooks hook simple Samaritans' eyes buried in books.",
+
+"While cannily panicking was the average. I broadcast modern boredom mesozoic poetry pupils. Caught up in scruples from the inimical nature of my program.",
+
+"Close encounters of the first kind, contact cursed minds skies red. Stuck sitting spinning world wide webs, over whim and worry flurried on your sidesteps.",
+
+"Pays quicken upon asphalt light source sun burst beams, a portrait of pillage, multiple put-downs paint burn marks on perception.",
+
+"Relentless agent hush horrendous circles on my pavement, two sticks to burn basics the lie adjacent to my placement.",
+
+"This is a never dug disco, Zoo York tycoon, memorandum bonanza banter clamp crunk out the fish bowl.",
+
+"I used to have a rope ladder but tattered were the rungs, I strung it from the highest willow, trying to hug the sun."
 
 
 
@@ -96,6 +123,23 @@ $titles_array = array(
   "Fraggle rock your four figure watch",
   "Crooked rumors turn zoomers when rookies talkin'",
   "Candid once position from which instigations spawn",
+  "See the root of the mute button was dug up bug up on a song",
+  "Cats know the ambiance calm beyond comparison",
+  "So one overlooked the scene including loopholes",
+  "Desire on the opposite circuit and glorious days",
+  "When linked we let our eyelids fall and pilots stall",
+  "Now taciturn facets burn open to yield malarkey navigator",
+  "Pilot burner riddle of trades, divinity, composers",
+  "Ebonics lurking where the crop circles got stamped out from the rain dance.",
+  "Axis pivotal point spun all to often",
+  "Collapsing scaffold mad pole crusher russian robot recruits",
+  "Iron clad oracle test three COM unit disperse silently",
+  "Now what of the madness fragments? Stagnant.",
+  "Sling blanks sprayed it with apathy magic balance",
+
+
+
+
 
 
 

@@ -13,16 +13,16 @@ include('words.php');
 <link rel="icon" type="image/png" href="https://projects.delargedesign.com/assets/images/favicon.png?v16021093844051"/>
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Aesop ipsum">
+<meta property="og:title" content="Aesop ipsum - placeholder text using Aesop Rock lyrics">
 <meta property="og:site_name" content="Aesop ipsum">
 <meta property="og:url" content="https://aesop.rocks/">
 <meta property="og:image" content="https://aesop.rocks/_/img/share.jpg">
-<meta property="og:description" content="Create placeholder text using Aesop Rock lyrics">
+<meta property="og:description" content="When you can't work with real content, bring some of the illest rap lyrics ever written to your projects">
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@delarge">
-	<meta name="twitter:title" content="Aesop ipsum">
-	<meta name="twitter:description" content="Create placeholder text using Aesop Rock lyrics">
+	<meta name="twitter:title" content="Aesop ipsum - placeholder text using Aesop Rock lyrics">
+	<meta name="twitter:description" content="When you can't work with real content, bring some of the illest rap lyrics ever written to your projects">
 	<meta name="twitter:image" content="https://aesop.rocks/_/img/share.jpg">
 
 </head>
