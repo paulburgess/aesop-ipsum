@@ -255,33 +255,42 @@ header {
   padding: 20px 0;
   width: 100%;
 }
-/* line 84, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 header h1, header h2 {
-  margin: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+/* line 92, ../sass/screen.scss */
+header h1 {
+  margin-bottom: 8px;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 .intro {
   background-color: #fff;
+  background-image: url(../img/bg_graf.jpg);
+  background-size: cover;
+  background-position: center center;
   width: 100%;
   padding: 20px 0;
   font-weight: 700;
+  text-shadow: 1px 1px 1px #FFF;
 }
 
-/* line 96, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 main {
   background-color: #eee;
   width: 100%;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 footer {
   background: #FFF;
   padding: 40px 0;
   width: 100%;
 }
 
-/* line 113, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .refresh {
   margin: 80px 0 80px 0;
   display: -webkit-box;
@@ -293,31 +302,31 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/* line 118, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .refresh button {
   cursor: pointer;
 }
-/* line 120, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .refresh button:hover {
   background-color: #a3a3a3;
 }
-/* line 125, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .refresh svg {
   display: inline-block;
   margin-right: 5px;
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 .foot-notes {
   margin-top: 40px;
   font-size: 80%;
 }
-/* line 137, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .foot-notes p + p {
   margin-top: 10px;
 }
 
-/* line 143, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 button {
   font-size: 14px;
   border: 0;
