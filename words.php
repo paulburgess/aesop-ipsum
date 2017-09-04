@@ -45,7 +45,7 @@ $lines_array = array(
 
   "Busting accidental dirt bike donuts, outside the most ridiculous poison tongue brain silo, dead before the chubby debutante conquered the high note, schooled by the cruel intention inventions pensive sideshow.",
 
-  "Earth to AR vertical burden has increased at an alarming rate, bliss is down a point, murder up, glee down and still falling, still crawling out of bed at 2 on Saturdays, came this blind soldier-burning confessional.",
+//  "Earth to AR vertical burden has increased at an alarming rate, bliss is down a point, murder up, glee down and still falling, still crawling out of bed at 2 on Saturdays, came this blind soldier-burning confessional.",
 
   "My first name is a random set of numbers and letters, and other alphanumerics that changes hourly forever, my last name, a thousand vowels fading down a sinkhole to a susurrus, couldn't just be John Doe or Bingo.",
 
@@ -55,7 +55,7 @@ $lines_array = array(
 
   "Please hold for the don't-play dull boy, click: I am not a page or a pull toy. Came in the door and the floor is lava, killjoy if your core more Norman Rockwell.",
 
-  "That engine sputters while the hound dogs wire cutter mechnical rabbit. Bantam weight puppies ain't rabid enough to snatch him.",
+//  "That engine sputters while the hound dogs wire cutter mechnical rabbit. Bantam weight puppies ain't rabid enough to snatch him.",
 
   "Bantamweight temper tantrum, decrepit anthem, set a low goal, I arrive late."
 
@@ -75,7 +75,7 @@ $titles_array = array(
 
   "Let a sucker drift, I lift up every stone prone to find",
   "And a scent, your riddles yield a little plastic blend",
-  "Once my breath is dispersed, My God, you think the heavens touched the earth",
+//  "Once my breath is dispersed, My God, you think the heavens touched the earth",
   "Ease back; let a heart thump echo normalcy for 10",
   "Let the back burner boiling point descend",
   "Sit and sweat bullets on a console",
