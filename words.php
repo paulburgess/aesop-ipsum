@@ -57,7 +57,15 @@ $lines_array = array(
 
 //  "That engine sputters while the hound dogs wire cutter mechnical rabbit. Bantam weight puppies ain't rabid enough to snatch him.",
 
-  "Bantamweight temper tantrum, decrepit anthem, set a low goal, I arrive late."
+  "Bantamweight temper tantrum, decrepit anthem, set a low goal, I arrive late.",
+
+  "I forever wallow in glitches, grimly distributed by side effects, consumed, cocooned in antisocial trenches, drenched.",
+
+  "I make music and connect color to canvas, swoop down from the trees with potpourris and other bandits. Landed randomly upon the valleys of the grimace, saw my planted leaf start burnin from the oustide in.",
+
+  "Soul crafted fat cats, burrowin', left perennial tenants discouraged in. Discussing my four-season flourishing."
+
+
 
 
 
@@ -85,7 +93,10 @@ $titles_array = array(
   "I get more guidance from my barber",
   "Where the wild strawberry vines toss and turn",
   "Pinball whiz in a thimble of Sims",
-  "Fraggle rock your four figure watch"
+  "Fraggle rock your four figure watch",
+  "Crooked rumors turn zoomers when rookies talkin'",
+  "Candid once position from which instigations spawn",
+
 
 
 
