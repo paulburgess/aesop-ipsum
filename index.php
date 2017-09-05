@@ -30,7 +30,10 @@ include('words.php');
 
 <div class="image-strip">
 	<div class="image-strip__image">
-		<img src="_/img/header.jpg" alt="Aesop Rock performing live">
+
+		<img src="_/img/header.jpg"
+		srcset="_/img/header--600.jpg 600w, _/img/header.jpg 1172w" sizes="100vw">
+
 	</div>
 	<!-- image-strip__image -->
 </div>

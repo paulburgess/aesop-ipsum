@@ -49,7 +49,7 @@ $lines_array = array(
 
   "My first name is a random set of numbers and letters, and other alphanumerics that changes hourly forever, my last name, a thousand vowels fading down a sinkhole to a susurrus, couldn't just be John Doe or Bingo.",
 
-  "Let me put you up on Bob's donuts, controller of the warm deep fryer that charms cobras. Picture if you will a witching hour on a weak night in the trenches, where paranoia dead-ends in a bright florescent heaven with sprinkles, I know right, yum!",
+  "Let me put you up on Bob's donuts, controller of the warm deep fryer that charms cobras. Picture if you will a witching hour on a week night in the trenches, where paranoia dead-ends in a bright florescent heaven with sprinkles, I know right, yum!",
 
   "Today I pulled three ghost crabs out of rock and sand, where the low tide showcased a promised land.",
 

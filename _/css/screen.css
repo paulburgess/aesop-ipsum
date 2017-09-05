@@ -269,7 +269,7 @@ header h1 {
 /* line 99, ../sass/screen.scss */
 .intro {
   background-color: #fff;
-  background-image: url(../img/bg_graf.jpg);
+  background-image: url(../img/bg_graf--600.jpg);
   background-size: cover;
   background-position: center center;
   width: 100%;
@@ -277,33 +277,45 @@ header h1 {
   font-weight: 700;
   text-shadow: 1px 1px 1px #FFF;
 }
+@media (min-width: 43.75em) {
+  /* line 99, ../sass/screen.scss */
+  .intro {
+    background-image: url(../img/bg_graf.jpg);
+  }
+}
 
-/* line 113, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 main {
   background-color: #fff;
   width: 100%;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 footer {
   background: #333;
-  background-image: url(../img/bg_graf--dark.jpg);
+  background-image: url(../img/bg_graf--dark--600.jpg);
   background-size: cover;
   background-position: center center;
   padding: 40px 0;
   width: 100%;
   color: #999;
 }
-/* line 133, ../sass/screen.scss */
+@media (min-width: 43.75em) {
+  /* line 127, ../sass/screen.scss */
+  footer {
+    background-image: url(../img/bg_graf--dark.jpg);
+  }
+}
+/* line 140, ../sass/screen.scss */
 footer a {
   color: #999;
 }
-/* line 135, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 footer a:hover {
   color: #FFF;
 }
 
-/* line 141, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .refresh {
   margin: 80px 0 80px 0;
   display: -webkit-box;
@@ -315,31 +327,31 @@ footer a:hover {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/* line 146, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .refresh button {
   cursor: pointer;
 }
-/* line 148, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .refresh button:hover {
   background-color: #bebebe;
 }
-/* line 153, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .refresh svg {
   display: inline-block;
   margin-right: 5px;
 }
 
-/* line 161, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .foot-notes {
   margin-top: 40px;
   font-size: 80%;
 }
-/* line 166, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 .foot-notes p + p {
   margin-top: 10px;
 }
 
-/* line 172, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 button {
   font-size: 14px;
   border: 0;

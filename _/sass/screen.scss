@@ -98,7 +98,10 @@ header {
 
 .intro {
   background-color: #fff;
+  background-image: url(../img/bg_graf--600.jpg);
+  @include breakpoint(em(700)){
   background-image: url(../img/bg_graf.jpg);
+	}
   background-size: cover;
   background-position: center center;
   width: 100%;
@@ -123,7 +126,11 @@ width: 100%;
 
 footer {
   background: #333;
+  background-image: url(../img/bg_graf--dark--600.jpg);
+  @include breakpoint(em(700)){
   background-image: url(../img/bg_graf--dark.jpg);
+	}
+
   background-size: cover;
   background-position: center center;
   padding: 40px 0;
