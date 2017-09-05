@@ -80,7 +80,7 @@ include('words.php');
 
 				<?php
 
-				for ( $i = 0; $i < 4; $i++ )
+				for ( $i = 0; $i < rand(4,9); $i++ )
 				{
 					echo"<li>";
 					echo getTitle();
@@ -101,11 +101,7 @@ include('words.php');
 		<section>
 			<?php
 			echo "<p>";
-			for ( $i = 0; $i < 2; $i++ )
-			{
-				echo getLine();
-				echo " ";
-			}
+			loopLines(3,6);
 			echo "</p>";
 			?>
 
@@ -151,8 +147,8 @@ include('words.php');
 	<p><a href="https://rhymesayers.com/artists/aesoprock">Aesop Rock on rhymesayers.com</a></p>
 
 	<div class="foot-notes">
+		<p>A project from the <a href="https://projects.delargedesign.com/">Delarge web studio</a> &bull; <a href="https://twitter.com/intent/user?screen_name=delarge">@delarge</a></p>
 		<p><a href="https://www.flickr.com/photos/delarge/2230759958/in/album-72157603822916205/">Header photo</a> by <a href="http://www.simonwaller.co.uk/">Simon Waller</a></p>
-		<p>A project from the <a href="https://projects.delargedesign.com/">Delarge web studio</a></p>
 	</div>
 
 	</div>
